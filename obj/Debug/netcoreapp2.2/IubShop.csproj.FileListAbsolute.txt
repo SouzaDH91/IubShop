@@ -1,0 +1,14 @@
+F:\projetos visual studio\IubShop\IubShop\obj\Debug\netcoreapp2.2\IubShop.csprojAssemblyReference.cache
+F:\projetos visual studio\IubShop\IubShop\obj\Debug\netcoreapp2.2\IubShop.csproj.CoreCompileInputs.cache
+F:\projetos visual studio\IubShop\IubShop\obj\Debug\netcoreapp2.2\IubShop.RazorAssemblyInfo.cache
+F:\projetos visual studio\IubShop\IubShop\obj\Debug\netcoreapp2.2\IubShop.RazorAssemblyInfo.cs
+F:\projetos visual studio\IubShop\IubShop\obj\Debug\netcoreapp2.2\IubShop.AssemblyInfoInputs.cache
+F:\projetos visual studio\IubShop\IubShop\obj\Debug\netcoreapp2.2\IubShop.AssemblyInfo.cs
+F:\projetos visual studio\IubShop\IubShop\obj\Debug\netcoreapp2.2\IubShop.RazorTargetAssemblyInfo.cache
+F:\projetos visual studio\IubShop\IubShop\obj\Debug\netcoreapp2.2\IubShop.dll
+F:\projetos visual studio\IubShop\IubShop\obj\Debug\netcoreapp2.2\IubShop.pdb
+F:\projetos visual studio\IubShop\IubShop\bin\Debug\netcoreapp2.2\IubShop.deps.json
+F:\projetos visual studio\IubShop\IubShop\bin\Debug\netcoreapp2.2\IubShop.runtimeconfig.json
+F:\projetos visual studio\IubShop\IubShop\bin\Debug\netcoreapp2.2\IubShop.runtimeconfig.dev.json
+F:\projetos visual studio\IubShop\IubShop\bin\Debug\netcoreapp2.2\IubShop.dll
+F:\projetos visual studio\IubShop\IubShop\bin\Debug\netcoreapp2.2\IubShop.pdb
