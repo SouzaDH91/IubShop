@@ -7,8 +7,8 @@
     <div class="container">
         <div class="breadcrumb-content">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="active"> Contact Us </li>
+                <li><a href="/">Home</a></li>
+                <li class="active"> Contato </li>
             </ul>
         </div>
     </div>
@@ -64,27 +64,27 @@
                     </div>
                     <div id="contact-form-tab" class="tab-pane fade row d-flex">
                         <div class="col">
-                            <form id="contact-form" action="assets/mail.php" method="post">
+                            <form id="contact-form" action="/Home/ContactAction" method="post">
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="contact-form-style mb-20">
-                                            <input name="name" placeholder="Full Name" type="text">
+                                            <input name="name" id="name" placeholder="Full Name" type="text"/>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="contact-form-style mb-20">
-                                            <input name="email" placeholder="Email Address" type="email">
+                                            <input name="email" id="email" placeholder="Email Address" type="email"/>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="contact-form-style mb-20">
-                                            <input name="subject" placeholder="Subject" type="text">
+                                            <input name="subject" id="subject" placeholder="Subject" type="text"/>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="contact-form-style">
-                                            <textarea name="message" placeholder="Message"></textarea>
-                                            <button class="submit" type="submit">SEND MESSAGE</button>
+                                            <textarea name="message" id="message" placeholder="Message"></textarea>
+                                            <button class="submit" type="submit">ENVIAR MENSAGEM</button>
                                         </div>
                                     </div>
                                 </div>
