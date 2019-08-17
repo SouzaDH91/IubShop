@@ -64,21 +64,29 @@
                     </div>
                     <div id="contact-form-tab" class="tab-pane fade row d-flex">
                         <div class="col">
+                            @if (ViewData["success"] != null)
+                            {
+                                <p class="alert alert-success">@ViewData["success"]</p>
+                            }
+                            @if (ViewData["error"] != null)
+                            {
+                                <p class="alert alert-danger">@ViewData["error"]</p>
+                            }
                             <form id="contact-form" action="/Home/ContactAction" method="post">
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="contact-form-style mb-20">
-                                            <input name="name" id="name" placeholder="Full Name" type="text"/>
+                                            <input name="name" id="name" placeholder="Full Name" type="text" />
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="contact-form-style mb-20">
-                                            <input name="email" id="email" placeholder="Email Address" type="email"/>
+                                            <input name="email" id="email" placeholder="Email Address" type="email" />
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="contact-form-style mb-20">
-                                            <input name="subject" id="subject" placeholder="Subject" type="text"/>
+                                            <input name="subject" id="subject" placeholder="Subject" type="text" />
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
@@ -89,7 +97,8 @@
                                     </div>
                                 </div>
                             </form>
-                            <p class="form-messege"></p>
+                            <!--<p class="form-messege">-->
+                            </p>
                         </div>
                     </div>
                     <div id="store-location" class="tab-pane fade row d-flex active show">
@@ -286,7 +295,7 @@
         var marker = new google.maps.Marker({
             position: new google.maps.LatLng(40.709896, -73.995481),
             map: map,
-            icon: 'assets/img/icon-img/map.png',
+            icon: '/assets/img/icon-img/map.png',
             animation:google.maps.Animation.BOUNCE,
             title: 'Snazzy!'
         });

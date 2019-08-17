@@ -2,7 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using IubShop.Libraries.Email;
+using IubShop.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
+using System.Text;
 
 namespace IubShop.Controllers
 {
@@ -20,11 +24,44 @@ namespace IubShop.Controllers
 
         public IActionResult ContactAction()
         {
-            string name = HttpContext.Request.Form["name"];
-            string email = HttpContext.Request.Form["email"];
-            string subject = HttpContext.Request.Form["subject"];
-            string message = HttpContext.Request.Form["message"];
-            return new ContentResult() { Content = string.Format("Dados recebidos com sucesso! Nome: {0} E-mail: {1} Assunto: {2} Mensagem: {3}", name, email, subject, message), ContentType = "text/html" };
+            try
+            {
+                Contact contact = new Contact();
+
+                contact.Name = HttpContext.Request.Form["name"];
+                contact.Email = HttpContext.Request.Form["email"];
+                contact.Subject = HttpContext.Request.Form["subject"];
+                contact.Message = HttpContext.Request.Form["message"];
+
+                var messageList = new List<ValidationResult>();
+                var context = new ValidationContext(contact);
+                bool isValid = Validator.TryValidateObject(contact, context, messageList, true);
+
+                if (isValid)
+                {
+                    ContactEmail.SenderContactEmail(contact);
+
+                    ViewData["success"] = "Mensagem de contato enviada com sucesso";
+                } else
+                {
+                    StringBuilder sb = new StringBuilder();
+                    foreach (var _text in messageList)
+                    {
+                        sb.Append(_text.ErrorMessage);
+                    }
+
+                    ViewData["error"] = sb.ToString();
+                }
+
+            }
+            catch (Exception e)
+            {
+                ViewData["error"] = "Oooppss houve um erro, tente novamente mais tarde!";
+
+                //TODO - Implementar Log
+            }
+
+            return View("Contact");
         }
 
         public IActionResult Login()
