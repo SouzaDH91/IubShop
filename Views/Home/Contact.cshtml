@@ -1,6 +1,7 @@
 ﻿
 @{
     ViewData["Title"] = "Contato";
+    IubShop.Models.Contact contact = (IubShop.Models.Contact) ViewData["CONTACT"];
 }
 
 <div class="breadcrumb-area gray-bg-7">
@@ -70,35 +71,38 @@
                             }
                             @if (ViewData["error"] != null)
                             {
-                                <p class="alert alert-danger">@ViewData["error"]</p>
+                                <p class="alert alert-danger">@Html.Raw(ViewData["error"])</p>
                             }
                             <form id="contact-form" action="/Home/ContactAction" method="post">
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="contact-form-style mb-20">
-                                            <input name="name" id="name" placeholder="Full Name" type="text" />
+                                            <input name="name" id="name" placeholder="Full Name" type="text" required="" value="@(contact != null ? contact.Name : "")" />
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="contact-form-style mb-20">
-                                            <input name="email" id="email" placeholder="Email Address" type="email" />
+                                            <input name="email" id="email" placeholder="Email Address" type="email" value="@(contact != null ? contact.Email : "")" />
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="contact-form-style mb-20">
-                                            <input name="subject" id="subject" placeholder="Subject" type="text" />
+                                            <input name="subject" id="subject" placeholder="Subject" type="text" value="@(contact != null ? contact.Subject : "")" />
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="contact-form-style">
-                                            <textarea name="message" id="message" placeholder="Message"></textarea>
+                                            <textarea name="message" id="message" placeholder="Message">@(contact != null ? contact.Message : "")</textarea>
                                             <button class="submit" type="submit">ENVIAR MENSAGEM</button>
                                         </div>
                                     </div>
                                 </div>
                             </form>
-                            <!--<p class="form-messege">-->
-                            </p>
+                            <p class="form-messege mt-3"></p>
+                            <div class="preloader" style="display: none;">
+                                <img src="\assets\img\load.gif" alt="Preloader" style="max-width: 50px;">
+                                <span>Enviando mensagem...</span>
+                            </div>
                         </div>
                     </div>
                     <div id="store-location" class="tab-pane fade row d-flex active show">

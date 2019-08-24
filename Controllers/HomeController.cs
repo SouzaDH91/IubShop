@@ -40,9 +40,12 @@ namespace IubShop.Controllers
                 if (isValid)
                 {
                     ContactEmail.SenderContactEmail(contact);
+                    //ViewData["success"] = "Mensagem de contato enviada com sucesso";
 
-                    ViewData["success"] = "Mensagem de contato enviada com sucesso";
-                } else
+                    return Ok(new { status = "success", mensagem = "Mensagem de contato enviada com sucesso" }); //Serializar esse Obj Anonimo em JSON
+
+                }
+                else
                 {
                     StringBuilder sb = new StringBuilder();
                     foreach (var _text in messageList)
@@ -50,18 +53,21 @@ namespace IubShop.Controllers
                         sb.Append(_text.ErrorMessage);
                     }
 
-                    ViewData["error"] = sb.ToString();
+                    //ViewData["error"] = sb.ToString();
+
+                    return Ok(new { status = "error", mensagem = sb.ToString() });
                 }
 
             }
             catch (Exception e)
             {
-                ViewData["error"] = "Oooppss houve um erro, tente novamente mais tarde!";
+                //ViewData["error"] = "Oooppss houve um erro, tente novamente mais tarde!";
 
+                return Ok(new { status = "error", mensagem = "Oooppss houve um erro, tente novamente mais tarde!" });
                 //TODO - Implementar Log
             }
 
-            return View("Contact");
+            //return View("Contact");
         }
 
         public IActionResult Login()

@@ -27,3 +27,5 @@ F:\projetos visual studio\IubShop\IubShop\obj\Debug\netcoreapp2.2\Razor\Views\Ho
 F:\projetos visual studio\IubShop\IubShop\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
 F:\projetos visual studio\IubShop\IubShop\obj\Debug\netcoreapp2.2\Razor\Views\Home\Login.g.cshtml.cs
 F:\projetos visual studio\IubShop\IubShop\obj\Debug\netcoreapp2.2\Razor\Views\Home\Cart.g.cshtml.cs
+F:\projetos visual studio\IubShop\IubShop\obj\Debug\netcoreapp2.2\IubShop.Libraries.Lang.Message.resources
+F:\projetos visual studio\IubShop\IubShop\obj\Debug\netcoreapp2.2\IubShop.csproj.GenerateResource.cache
