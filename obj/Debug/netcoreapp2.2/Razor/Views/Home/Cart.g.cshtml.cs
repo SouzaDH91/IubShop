@@ -13,9 +13,37 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#line 2 "F:\projetos visual studio\IubShop\IubShop\Views\_ViewImports.cshtml"
+using IubShop.Models;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9c05a6e0e5b8078dbb4576072fc62f15980ee012", @"/Views/Home/Cart.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7350292cbeac383d8a267f77110b1e33880f76ae", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Cart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("action", new global::Microsoft.AspNetCore.Html.HtmlString("#"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        #line hidden
+        #pragma warning disable 0169
+        private string __tagHelperStringValueBuffer;
+        #pragma warning restore 0169
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext __tagHelperExecutionContext;
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner __tagHelperRunner = new global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner();
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperScopeManager __backed__tagHelperScopeManager = null;
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperScopeManager __tagHelperScopeManager
+        {
+            get
+            {
+                if (__backed__tagHelperScopeManager == null)
+                {
+                    __backed__tagHelperScopeManager = new global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperScopeManager(StartTagHelperWritingScope, EndTagHelperWritingScope);
+                }
+                return __backed__tagHelperScopeManager;
+            }
+        }
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper;
         #pragma warning disable 1998
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
@@ -28,7 +56,7 @@ namespace AspNetCore
 
 #line default
 #line hidden
-            BeginContext(46, 10171, true);
+            BeginContext(46, 556, true);
             WriteLiteral(@"
 <div class=""breadcrumb-area gray-bg-7"">
     <div class=""container"">
@@ -46,7 +74,12 @@ namespace AspNetCore
         <h3 class=""page-title"">Your cart items</h3>
         <div class=""row"">
             <div class=""col-lg-12 col-md-12 col-sm-12 col-12"">
-                <form action=""#"">
+                ");
+            EndContext();
+            BeginContext(602, 5088, false);
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9c05a6e0e5b8078dbb4576072fc62f15980ee0124442", async() => {
+                BeginContext(619, 5064, true);
+                WriteLiteral(@"
                     <div class=""table-content table-responsive"">
                         <table>
                             <thead>
@@ -56,8 +89,7 @@ namespace AspNetCore
                                     <th>Until Price</th>
                                     <th>Qty</th>
                                     <th>Subtotal</th>
-      ");
-            WriteLiteral(@"                              <th></th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -66,14 +98,14 @@ namespace AspNetCore
                                         <a href=""#""><img src=""\assets\img\cart\cart-3.jpg"" alt=""""></a>
                                     </td>
                                     <td class=""product-name""><a href=""#"">Phantom Remote Control Ver 2018</a></td>
-                                    <td class=""product-price-cart""><span class=""amount"">$260.00</span></td>
+                                    <td class=""pro");
+                WriteLiteral(@"duct-price-cart""><span class=""amount"">$260.00</span></td>
                                     <td class=""product-quantity"">
                                         <div class=""pro-dec-cart"">
                                             <input class=""cart-plus-minus-box"" type=""text"" value=""02"" name=""qtybutton"">
                                         </div>
                                     </td>
-                                    <td class");
-            WriteLiteral(@"=""product-subtotal"">$110.00</td>
+                                    <td class=""product-subtotal"">$110.00</td>
                                     <td class=""product-remove"">
                                         <a href=""#""><i class=""fa fa-pencil""></i></a>
                                         <a href=""#""><i class=""fa fa-times""></i></a>
@@ -82,13 +114,13 @@ namespace AspNetCore
                                 <tr>
                                     <td class=""product-thumbnail"">
                                         <a href=""#""><img src=""\assets\img\cart\cart-4.jpg"" alt=""""></a>
-                                    </td>
+           ");
+                WriteLiteral(@"                         </td>
                                     <td class=""product-name""><a href=""#"">Phantom Remote Control Ver 2018</a></td>
                                     <td class=""product-price-cart""><span class=""amount"">$150.00</span></td>
                                     <td class=""product-quantity"">
                                         <div class=""pro-dec-cart"">
-                                            <input class=""ca");
-            WriteLiteral(@"rt-plus-minus-box"" type=""text"" value=""02"" name=""qtybutton"">
+                                            <input class=""cart-plus-minus-box"" type=""text"" value=""02"" name=""qtybutton"">
                                         </div>
                                     </td>
                                     <td class=""product-subtotal"">$150.00</td>
@@ -97,13 +129,13 @@ namespace AspNetCore
                                         <a href=""#""><i class=""fa fa-times""></i></a>
                                     </td>
                                 </tr>
-                                <tr>
+                        ");
+                WriteLiteral(@"        <tr>
                                     <td class=""product-thumbnail"">
                                         <a href=""#""><img src=""\assets\img\cart\cart-5.jpg"" alt=""""></a>
                                     </td>
                                     <td class=""product-name""><a href=""#"">Phantom Remote Control Ver 2018</a></td>
-                                    <td class=""product-price-cart""><span class=""amount"">$170.00</span></td>");
-            WriteLiteral(@"
+                                    <td class=""product-price-cart""><span class=""amount"">$170.00</span></td>
                                     <td class=""product-quantity"">
                                         <div class=""pro-dec-cart"">
                                             <input class=""cart-plus-minus-box"" type=""text"" value=""02"" name=""qtybutton"">
@@ -111,7 +143,8 @@ namespace AspNetCore
                                     </td>
                                     <td class=""product-subtotal"">$170.00</td>
                                     <td class=""product-remove"">
-                                        <a href=""#""><i class=""fa fa-pencil""></i></a>
+                                        <a href=""#""><i class=""fa fa-pencil""></i>");
+                WriteLiteral(@"</a>
                                         <a href=""#""><i class=""fa fa-times""></i></a>
                                     </td>
                                 </tr>
@@ -121,8 +154,7 @@ namespace AspNetCore
                     <div class=""row"">
                         <div class=""col-lg-12"">
                             <div class=""cart-shiping-update-wrapper"">
-                   ");
-            WriteLiteral(@"             <div class=""cart-shiping-update"">
+                                <div class=""cart-shiping-update"">
                                     <a href=""#"">Continue Shopping</a>
                                 </div>
                                 <div class=""cart-clear"">
@@ -132,7 +164,25 @@ namespace AspNetCore
                             </div>
                         </div>
                     </div>
-                </form>
+                ");
+                EndContext();
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            EndContext();
+            BeginContext(5690, 889, true);
+            WriteLiteral(@"
                 <div class=""row"">
                     <div class=""col-lg-4 col-md-6"">
                         <div class=""cart-tax"">
@@ -141,31 +191,221 @@ namespace AspNetCore
                             </div>
                             <div class=""tax-wrapper"">
                                 <p>Enter your destination to get a shipping estimate.</p>
-               ");
-            WriteLiteral(@"                 <div class=""tax-select-wrapper"">
+                                <div class=""tax-select-wrapper"">
                                     <div class=""tax-select"">
                                         <label>
                                             * Country
                                         </label>
                                         <select class=""email s-email s-wid"">
-                                            <option>Bangladesh</option>
-                                            <option>Albania</option>
-                                            <option>Åland Islands</option>
-                                            <option>Afghanistan</option>
-                                            <option>Belgium</option>
+                                            ");
+            EndContext();
+            BeginContext(6579, 27, false);
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9c05a6e0e5b8078dbb4576072fc62f15980ee01212222", async() => {
+                BeginContext(6587, 10, true);
+                WriteLiteral("Bangladesh");
+                EndContext();
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            EndContext();
+            BeginContext(6606, 46, true);
+            WriteLiteral("\r\n                                            ");
+            EndContext();
+            BeginContext(6652, 24, false);
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9c05a6e0e5b8078dbb4576072fc62f15980ee01213448", async() => {
+                BeginContext(6660, 7, true);
+                WriteLiteral("Albania");
+                EndContext();
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            EndContext();
+            BeginContext(6676, 46, true);
+            WriteLiteral("\r\n                                            ");
+            EndContext();
+            BeginContext(6722, 30, false);
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9c05a6e0e5b8078dbb4576072fc62f15980ee01214670", async() => {
+                BeginContext(6730, 13, true);
+                WriteLiteral("Åland Islands");
+                EndContext();
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            EndContext();
+            BeginContext(6752, 46, true);
+            WriteLiteral("\r\n                                            ");
+            EndContext();
+            BeginContext(6798, 28, false);
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9c05a6e0e5b8078dbb4576072fc62f15980ee01215899", async() => {
+                BeginContext(6806, 11, true);
+                WriteLiteral("Afghanistan");
+                EndContext();
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            EndContext();
+            BeginContext(6826, 46, true);
+            WriteLiteral("\r\n                                            ");
+            EndContext();
+            BeginContext(6872, 24, false);
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9c05a6e0e5b8078dbb4576072fc62f15980ee01217126", async() => {
+                BeginContext(6880, 7, true);
+                WriteLiteral("Belgium");
+                EndContext();
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            EndContext();
+            BeginContext(6896, 442, true);
+            WriteLiteral(@"
                                         </select>
                                     </div>
                                     <div class=""tax-select"">
                                         <label>
                                             * Region / State
-                                        </label>");
-            WriteLiteral(@"
+                                        </label>
                                         <select class=""email s-email s-wid"">
-                                            <option>Bangladesh</option>
-                                            <option>Albania</option>
-                                            <option>Åland Islands</option>
-                                            <option>Afghanistan</option>
-                                            <option>Belgium</option>
+                                            ");
+            EndContext();
+            BeginContext(7338, 27, false);
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9c05a6e0e5b8078dbb4576072fc62f15980ee01218748", async() => {
+                BeginContext(7346, 10, true);
+                WriteLiteral("Bangladesh");
+                EndContext();
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            EndContext();
+            BeginContext(7365, 46, true);
+            WriteLiteral("\r\n                                            ");
+            EndContext();
+            BeginContext(7411, 24, false);
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9c05a6e0e5b8078dbb4576072fc62f15980ee01219974", async() => {
+                BeginContext(7419, 7, true);
+                WriteLiteral("Albania");
+                EndContext();
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            EndContext();
+            BeginContext(7435, 46, true);
+            WriteLiteral("\r\n                                            ");
+            EndContext();
+            BeginContext(7481, 30, false);
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9c05a6e0e5b8078dbb4576072fc62f15980ee01221196", async() => {
+                BeginContext(7489, 13, true);
+                WriteLiteral("Åland Islands");
+                EndContext();
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            EndContext();
+            BeginContext(7511, 46, true);
+            WriteLiteral("\r\n                                            ");
+            EndContext();
+            BeginContext(7557, 28, false);
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9c05a6e0e5b8078dbb4576072fc62f15980ee01222425", async() => {
+                BeginContext(7565, 11, true);
+                WriteLiteral("Afghanistan");
+                EndContext();
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            EndContext();
+            BeginContext(7585, 46, true);
+            WriteLiteral("\r\n                                            ");
+            EndContext();
+            BeginContext(7631, 24, false);
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9c05a6e0e5b8078dbb4576072fc62f15980ee01223652", async() => {
+                BeginContext(7639, 7, true);
+                WriteLiteral("Belgium");
+                EndContext();
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            EndContext();
+            BeginContext(7655, 1135, true);
+            WriteLiteral(@"
                                         </select>
                                     </div>
                                     <div class=""tax-select"">
@@ -176,8 +416,7 @@ namespace AspNetCore
                                     </div>
                                     <button class=""cart-btn-2"" type=""submit"">Get A Quote</button>
                                 </div>
-                  ");
-            WriteLiteral(@"          </div>
+                            </div>
                         </div>
                     </div>
                     <div class=""col-lg-4 col-md-6"">
@@ -186,18 +425,36 @@ namespace AspNetCore
                                 <h4 class=""cart-bottom-title section-bg-white"">Use Coupon Code</h4>
                             </div>
                             <div class=""discount-code"">
-                                <p>Enter your coupon code if you have one.</p>
-                                <form>
-                                    <input type=""text"" required="""" name=""name"">
-                                    <button class=""cart-btn-2"" type=""submit"">Apply Coupon</button>
-                                </form>
+ ");
+            WriteLiteral("                               <p>Enter your coupon code if you have one.</p>\r\n                                ");
+            EndContext();
+            BeginContext(8790, 228, false);
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9c05a6e0e5b8078dbb4576072fc62f15980ee01226016", async() => {
+                BeginContext(8796, 215, true);
+                WriteLiteral("\r\n                                    <input type=\"text\" required=\"\" name=\"name\">\r\n                                    <button class=\"cart-btn-2\" type=\"submit\">Apply Coupon</button>\r\n                                ");
+                EndContext();
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            EndContext();
+            BeginContext(9018, 1199, true);
+            WriteLiteral(@"
                             </div>
                         </div>
                     </div>
                     <div class=""col-lg-4 col-md-12"">
                         <div class=""grand-totall"">
-                            <div class=""");
-            WriteLiteral(@"title-wrap"">
+                            <div class=""title-wrap"">
                                 <h4 class=""cart-bottom-title section-bg-gary-cart"">Cart Total</h4>
                             </div>
                             <h5>Total products <span>$260.00</span></h5>
@@ -209,16 +466,8 @@ namespace AspNetCore
                                 </ul>
                             </div>
                             <h4 class=""grand-totall-title"">Grand Total  <span>$260.00</span></h4>
-                            <a href=""#"">Proceed to Checkout</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-");
+                            <a h");
+            WriteLiteral("ref=\"#\">Proceed to Checkout</a>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n");
             EndContext();
         }
         #pragma warning restore 1998

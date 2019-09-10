@@ -13,9 +13,38 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#line 2 "F:\projetos visual studio\IubShop\IubShop\Views\_ViewImports.cshtml"
+using IubShop.Models;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5263a34602a7de6d8353cb6b6c785bb206217a96", @"/Views/Home/Contact.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7350292cbeac383d8a267f77110b1e33880f76ae", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Contact : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("id", new global::Microsoft.AspNetCore.Html.HtmlString("contact-form"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("action", new global::Microsoft.AspNetCore.Html.HtmlString("/Home/ContactAction"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_2 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("method", "post", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        #line hidden
+        #pragma warning disable 0169
+        private string __tagHelperStringValueBuffer;
+        #pragma warning restore 0169
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext __tagHelperExecutionContext;
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner __tagHelperRunner = new global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner();
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperScopeManager __backed__tagHelperScopeManager = null;
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperScopeManager __tagHelperScopeManager
+        {
+            get
+            {
+                if (__backed__tagHelperScopeManager == null)
+                {
+                    __backed__tagHelperScopeManager = new global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperScopeManager(StartTagHelperWritingScope, EndTagHelperWritingScope);
+                }
+                return __backed__tagHelperScopeManager;
+            }
+        }
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
         #pragma warning disable 1998
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
@@ -147,72 +176,98 @@ namespace AspNetCore
 
 #line default
 #line hidden
-            BeginContext(3321, 408, true);
-            WriteLiteral(@"                            <form id=""contact-form"" action=""/Home/ContactAction"" method=""post"">
+            BeginContext(3321, 28, true);
+            WriteLiteral("                            ");
+            EndContext();
+            BeginContext(3349, 1891, false);
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5263a34602a7de6d8353cb6b6c785bb206217a969445", async() => {
+                BeginContext(3416, 313, true);
+                WriteLiteral(@"
                                 <div class=""row"">
                                     <div class=""col-lg-6"">
                                         <div class=""contact-form-style mb-20"">
                                             <input name=""name"" id=""name"" placeholder=""Full Name"" type=""text"" required=""""");
-            EndContext();
-            BeginWriteAttribute("value", " value=\"", 3729, "\"", 3775, 1);
+                EndContext();
+                BeginWriteAttribute("value", " value=\"", 3729, "\"", 3775, 1);
 #line 80 "F:\projetos visual studio\IubShop\IubShop\Views\Home\Contact.cshtml"
 WriteAttributeValue("", 3737, contact != null ? contact.Name : "", 3737, 38, false);
 
 #line default
 #line hidden
-            EndWriteAttribute();
-            BeginContext(3776, 352, true);
-            WriteLiteral(@" />
+                EndWriteAttribute();
+                BeginContext(3776, 352, true);
+                WriteLiteral(@" />
                                         </div>
                                     </div>
                                     <div class=""col-lg-6"">
                                         <div class=""contact-form-style mb-20"">
                                             <input name=""email"" id=""email"" placeholder=""Email Address"" type=""email""");
-            EndContext();
-            BeginWriteAttribute("value", " value=\"", 4128, "\"", 4175, 1);
+                EndContext();
+                BeginWriteAttribute("value", " value=\"", 4128, "\"", 4175, 1);
 #line 85 "F:\projetos visual studio\IubShop\IubShop\Views\Home\Contact.cshtml"
 WriteAttributeValue("", 4136, contact != null ? contact.Email : "", 4136, 39, false);
 
 #line default
 #line hidden
-            EndWriteAttribute();
-            BeginContext(4176, 350, true);
-            WriteLiteral(@" />
+                EndWriteAttribute();
+                BeginContext(4176, 350, true);
+                WriteLiteral(@" />
                                         </div>
                                     </div>
                                     <div class=""col-lg-12"">
                                         <div class=""contact-form-style mb-20"">
                                             <input name=""subject"" id=""subject"" placeholder=""Subject"" type=""text""");
-            EndContext();
-            BeginWriteAttribute("value", " value=\"", 4526, "\"", 4575, 1);
+                EndContext();
+                BeginWriteAttribute("value", " value=\"", 4526, "\"", 4575, 1);
 #line 90 "F:\projetos visual studio\IubShop\IubShop\Views\Home\Contact.cshtml"
 WriteAttributeValue("", 4534, contact != null ? contact.Subject : "", 4534, 41, false);
 
 #line default
 #line hidden
-            EndWriteAttribute();
-            BeginContext(4576, 336, true);
-            WriteLiteral(@" />
+                EndWriteAttribute();
+                BeginContext(4576, 336, true);
+                WriteLiteral(@" />
                                         </div>
                                     </div>
                                     <div class=""col-lg-12"">
                                         <div class=""contact-form-style"">
                                             <textarea name=""message"" id=""message"" placeholder=""Message"">");
-            EndContext();
-            BeginContext(4914, 38, false);
+                EndContext();
+                BeginContext(4914, 38, false);
 #line 95 "F:\projetos visual studio\IubShop\IubShop\Views\Home\Contact.cshtml"
                                                                                                     Write(contact != null ? contact.Message : "");
 
 #line default
 #line hidden
-            EndContext();
-            BeginContext(4953, 7437, true);
-            WriteLiteral(@"</textarea>
+                EndContext();
+                BeginContext(4953, 280, true);
+                WriteLiteral(@"</textarea>
                                             <button class=""submit"" type=""submit"">ENVIAR MENSAGEM</button>
                                         </div>
                                     </div>
                                 </div>
-                            </form>
+                            ");
+                EndContext();
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_1);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string)__tagHelperAttribute_2.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_2);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            EndContext();
+            BeginContext(5240, 7150, true);
+            WriteLiteral(@"
                             <p class=""form-messege mt-3""></p>
                             <div class=""preloader"" style=""display: none;"">
                                 <img src=""\assets\img\load.gif"" alt=""Preloader"" style=""max-width: 50px;"">
@@ -226,8 +281,7 @@ WriteAttributeValue("", 4534, contact != null ? contact.Subject : "", 4534, 41, 
                                 <div id=""map""></div>
                             </div>
                         </div>
-           ");
-            WriteLiteral(@"         </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -238,7 +292,8 @@ WriteAttributeValue("", 4534, contact != null ? contact.Subject : "", 4534, 41, 
 <script>
     function init() {
         var mapOptions = {
-            zoom: 11,
+            zoom: ");
+            WriteLiteral(@"11,
             scrollwheel: false,
             center: new google.maps.LatLng(40.709896, -73.995481),
             styles:
@@ -260,8 +315,7 @@ WriteAttributeValue("", 4534, contact != null ? contact.Subject : "", 4534, 41, 
                 },
                 {
                     ""featureType"": ""all"",
-                    ""elementType"": ");
-            WriteLiteral(@"""labels.text.stroke"",
+                    ""elementType"": ""labels.text.stroke"",
                     ""stylers"": [
                         {
                             ""visibility"": ""on""
@@ -269,7 +323,8 @@ WriteAttributeValue("", 4534, contact != null ? contact.Subject : "", 4534, 41, 
                         {
                             ""color"": ""#000000""
                         },
-                        {
+                        ");
+            WriteLiteral(@"{
                             ""lightness"": 16
                         }
                     ]
@@ -291,8 +346,7 @@ WriteAttributeValue("", 4534, contact != null ? contact.Subject : "", 4534, 41, 
                             ""color"": ""#000000""
                         },
                         {
-                            ""lightne");
-            WriteLiteral(@"ss"": 20
+                            ""lightness"": 20
                         }
                     ]
                 },
@@ -301,7 +355,8 @@ WriteAttributeValue("", 4534, contact != null ? contact.Subject : "", 4534, 41, 
                     ""elementType"": ""geometry.stroke"",
                     ""stylers"": [
                         {
-                            ""color"": ""#000000""
+                   ");
+            WriteLiteral(@"         ""color"": ""#000000""
                         },
                         {
                             ""lightness"": 17
@@ -324,8 +379,7 @@ WriteAttributeValue("", 4534, contact != null ? contact.Subject : "", 4534, 41, 
                     ]
                 },
                 {
-                    ""featu");
-            WriteLiteral(@"reType"": ""poi"",
+                    ""featureType"": ""poi"",
                     ""elementType"": ""geometry"",
                     ""stylers"": [
                         {
@@ -333,7 +387,8 @@ WriteAttributeValue("", 4534, contact != null ? contact.Subject : "", 4534, 41, 
                         },
                         {
                             ""lightness"": 21
-                        }
+             ");
+            WriteLiteral(@"           }
                     ]
                 },
                 {
@@ -355,8 +410,7 @@ WriteAttributeValue("", 4534, contact != null ? contact.Subject : "", 4534, 41, 
                         {
                             ""color"": ""#444444""
                         },
-              ");
-            WriteLiteral(@"          {
+                        {
                             ""lightness"": 29
                         },
                         {
@@ -365,7 +419,8 @@ WriteAttributeValue("", 4534, contact != null ? contact.Subject : "", 4534, 41, 
                     ]
                 },
                 {
-                    ""featureType"": ""road.arterial"",
+                    ""featureType"": ""road.a");
+            WriteLiteral(@"rterial"",
                     ""elementType"": ""geometry"",
                     ""stylers"": [
                         {
@@ -388,8 +443,7 @@ WriteAttributeValue("", 4534, contact != null ? contact.Subject : "", 4534, 41, 
                         }
                     ]
                 },
-   ");
-            WriteLiteral(@"             {
+                {
                     ""featureType"": ""transit"",
                     ""elementType"": ""geometry"",
                     ""stylers"": [
@@ -397,7 +451,8 @@ WriteAttributeValue("", 4534, contact != null ? contact.Subject : "", 4534, 41, 
                             ""color"": ""#000000""
                         },
                         {
-                            ""lightness"": 19
+            ");
+            WriteLiteral(@"                ""lightness"": 19
                         }
                     ]
                 },
@@ -418,8 +473,7 @@ WriteAttributeValue("", 4534, contact != null ? contact.Subject : "", 4534, 41, 
         var mapElement = document.getElementById('map');
         var map = new google.maps.Map(mapElement, mapOptions);
         var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(40.");
-            WriteLiteral(@"709896, -73.995481),
+            position: new google.maps.LatLng(40.709896, -73.995481),
             map: map,
             icon: '/assets/img/icon-img/map.png',
             animation:google.maps.Animation.BOUNCE,

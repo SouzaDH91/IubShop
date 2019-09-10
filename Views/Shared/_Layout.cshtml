@@ -1,4 +1,6 @@
-﻿<!doctype html>
+﻿@model IubShop.Models.Newsletter
+
+<!doctype html>
 <html class="no-js" lang="zxx">
 <head>
     <meta charset="utf-8">
@@ -81,7 +83,7 @@
                                     <a href="wishlist.html">Wishlist  </a>
                                 </li>
                                 <li>
-                                    <a href="/Home/Login">Cadastre-se ou faça Login  </a>
+                                    <a href="/Home/Login">Register or Login  </a>
                                 </li>
                                 <li>
                                     <a href="checkout.html"> Checkout</a>
@@ -515,13 +517,30 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-7 col-md-12">
+                <div class="col-lg-7 col-md-12" id="subscribe-form">
                     <div class="newsletter-from-close ml-50">
                         <div class="newsletter-style">
                             <div id="mc_embed_signup" class="subscribe-form pr-50">
-                                <form id="mc-embedded-subscribe-form" class="validate" novalidate="" target="_blank" name="mc-embedded-subscribe-form" method="post" action="http://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&id=05d85f18ef">
+
+                                @{
+                                    /*
+                                     * Razor - Motor template do ASP.NET
+                                     * HTML Helper - Interface que proporciona gerar código html por meio do C#, isso ajuda na manipulação de informações entre html e tecnologia ASP.NET
+                                     */
+
+                                    /*
+                                     * 
+                                     * URL - #Fragmento
+                                     * 
+                                     * 
+                                     * Form antigo:
+                                     * @using (Html.BeginForm("index", "home", FormMethod.Post, new { @id = "mc-embedded-subscribe-form", @class = "validate", @name = "mc-embedded-subscribe-form", @novalidate = "" }))
+                                     */
+                                }
+                                @using (Html.BeginForm(null, null, null, FormMethod.Post, false, new { @action = @Url.Action("index", "home") + "#subscribe-form", @id = "mc-embedded-subscribe-form", @class = "validate", @name = "mc-embedded-subscribe-form", @novalidate = "" }))
+                                {
                                     <div id="mc_embed_signup_scroll" class="mc-form">
-                                        <input class="email" type="email" required="" placeholder="Enter your email address..." name="EMAIL" value="">
+                                        @Html.EditorFor(m => m.Email, new { htmlAttributes = new { @type = "email", @name = "email", @class = "email", @required = "", @placeholder = "Enter your email address..." } })
                                         <div class="mc-news" aria-hidden="true">
                                             <input type="text" value="" tabindex="-1" name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef">
                                         </div>
@@ -529,7 +548,12 @@
                                             <input id="mc-embedded-subscribe" class="button" type="submit" name="subscribe" value="Subscribe">
                                         </div>
                                     </div>
-                                </form>
+                                    <span style="color: orange;">@Html.ValidationMessageFor(m => m.Email)</span>
+                                    @if (TempData["success"] != null)
+                                    {
+                                        <p class="alert alert-success">@TempData["success"]</p>
+                                    }
+                                }
                             </div>
                         </div>
                         <div class="newsletter-close">

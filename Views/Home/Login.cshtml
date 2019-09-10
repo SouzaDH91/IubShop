@@ -1,4 +1,4 @@
-﻿
+﻿@model Client
 @{
     ViewData["Title"] = "Login";
 }
@@ -47,11 +47,41 @@
                         </div>
                         <div id="lg2" class="tab-pane">
                             <div class="login-form-container">
+                                @if (TempData["success"] != null)
+                                {
+                                    <p class="alert alert-success">@TempData["success"]</p>
+                                }
                                 <div class="login-register-form">
-                                    <form action="#" method="post">
-                                        <input type="text" name="user-name" placeholder="Username">
-                                        <input type="password" name="user-password" placeholder="Password">
-                                        <input name="user-email" placeholder="Email" type="email">
+                                    <form asp-action="RegisterClient" asp-controller="Home" method="post">
+                                        <div class="row">
+                                            <div class="col">
+                                                <input type="text" asp-for="Name" name="user-name" placeholder="Name">
+                                                <span asp-validation-for="Name"></span>
+                                                <select asp-for="Gender">
+                                                    <option value="" selected disabled>Gender</option>
+                                                    <option value="M">Male</option>
+                                                    <option value="F">Female</option>
+                                                </select>
+                                                <span asp-validation-for="Gender"></span>
+                                            </div>
+                                            <div class="col">
+                                                <input type="text" asp-for="Birth" name="birth" placeholder="Birth">
+                                                <span asp-validation-for="Birth"></span>
+                                                <input type="text" asp-for="Phone" name="phone" placeholder="Phone">
+                                                <span asp-validation-for="Phone"></span>
+                                            </div>
+                                        </div>
+                                        <input name="user-email" asp-for="Email" placeholder="E-mail" type="email">
+                                        <span asp-validation-for="Email"></span>
+                                        <div class="row">
+                                            <div class="col">
+                                                <input type="password" asp-for="Password" name="user-password" placeholder="Password">
+                                                <span asp-validation-for="Password"></span>
+                                            </div>
+                                            <div class="col">
+                                                <input type="password" name="confirm-password" placeholder="Confirm password">
+                                            </div>
+                                        </div>
                                         <div class="button-box">
                                             <button type="submit"><span>Register</span></button>
                                         </div>

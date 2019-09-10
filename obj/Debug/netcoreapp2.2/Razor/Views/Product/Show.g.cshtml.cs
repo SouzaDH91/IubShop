@@ -13,7 +13,13 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#line 2 "F:\projetos visual studio\IubShop\IubShop\Views\_ViewImports.cshtml"
+using IubShop.Models;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2c4e0830c0b6af35a2010408276eccea6e630002", @"/Views/Product/Show.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7350292cbeac383d8a267f77110b1e33880f76ae", @"/Views/_ViewImports.cshtml")]
     public class Views_Product_Show : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IubShop.Models.Product>
     {
         #pragma warning disable 1998

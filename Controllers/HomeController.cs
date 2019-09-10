@@ -7,14 +7,40 @@ using IubShop.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
+using IubShop.Database;
 
 namespace IubShop.Controllers
 {
     public class HomeController : Controller
     {
+        private IubShopContext _db;
+        public HomeController(IubShopContext db)
+        {
+            _db = db;
+        }
+
+        [HttpGet]
         public IActionResult Index()
         {
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult Index([FromForm]Newsletter newsletter)
+        {
+            if(ModelState.IsValid)
+            {
+                _db.Newsletter.Add(newsletter);
+                _db.SaveChanges();
+
+                TempData["success"] = "Obrigado por ter assinado nossa newsletter. A partir de agora você receberá ofertas e promoções em seu email!";
+
+                return RedirectToAction(nameof(Index));
+            }
+            else
+            {
+                return View();
+            }
         }
 
         public IActionResult Contact()
@@ -70,8 +96,25 @@ namespace IubShop.Controllers
             //return View("Contact");
         }
 
+        [HttpGet]
         public IActionResult Login()
         {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Login([FromForm]Client client)
+        {
+            if (ModelState.IsValid)
+            {
+                _db.Add(client);
+                _db.SaveChanges();
+
+                TempData["success"] = "Cadastro realizado com sucesso!";
+
+                //TODO - Implementar redirecionamentos diferentes (Painel, carrinho de compras, etc).
+                return RedirectToAction(nameof(Login));
+            }
             return View();
         }
 

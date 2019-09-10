@@ -20,5 +20,6 @@ namespace IubShop.Database
         }
 
         public DbSet<Client> Clients { get; set; }
+        public DbSet<Newsletter> Newsletter { get; set; }
     }
 }
